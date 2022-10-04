@@ -16,8 +16,11 @@ else if(score >= 45 && score <= 49){
 else if(score >= 40 && score <= 44){
     result = ('E');
 }
-else{
+else if(score >= 0 && score <= 39){
     result = ('F');
+}
+else{
+    result = ('not available');
 }
 document.getElementById("result").innerHTML= result
 }
